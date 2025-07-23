@@ -1,0 +1,69 @@
+body {
+  background: linear-gradient(145deg, #000428, #004e92);
+}
+
+h1 {
+  color: #fff;
+  font-family: 'Courier New', Courier, monospace;
+  text-shadow: 0 0 10px #f0f, 0 0 20px #f0f, 0 0 30px #f0f;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 50px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 190px);
+  grid-template-rows: repeat(3, 190px); 
+  width: max-content;
+  margin: 50px auto;
+}
+
+.cell {
+  display: flex;
+  width: 190px;
+  height: 190px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 135px;
+  font-family: 'Orbitron', sans-serif;
+  transition: transform 0.2s ease;
+}
+
+.cell.X {
+  color: #00f0ff;
+  text-shadow: 0 0 4px #00f0ff, 0 0 8px #00f0ff;
+}
+
+.cell.O {
+  color: #ff00ff;
+  text-shadow: 0 0 4px #ff00ff, 0 0 8px #ff00ff;
+}
+
+#button {
+  display: block;
+  padding: 14px 28px;
+  margin: 30px auto;
+  font-size: 20px;
+  font-family: 'Cinzel', serif;
+  background-color: #0f0f0f;
+  color: #00fff2;
+  border: 2px solid #00f0ff;
+  border-radius: 12px;
+  cursor: pointer;
+  text-shadow: 0 0 4px #00f0ff;
+  box-shadow: 0 0 6px #00f0ff;
+  transition: all 0.3s ease;
+}
+
+#button:hover {
+  background-color: #101820;
+  box-shadow: 0 0 12px #00f0ff, 0 0 24px #00f0ff;
+  transform: scale(1.05);
+}
